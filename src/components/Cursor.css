@@ -1,0 +1,18 @@
+/* src/Cursor.css */
+.custom-cursor {
+  width: 40px;
+  height: 40px;
+  border: 2px solid beige; /* default */
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none; /* so it won’t block clicks */
+  transform: translate(-50%, -50%);
+  transition: border-color 0.25s ease, background 0.25s ease;
+  z-index: 9999;
+}
+
+.custom-cursor.hovered {
+  border-color: red; 
+  width: 60px;
+  height: 60px ;
+}

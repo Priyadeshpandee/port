@@ -1,0 +1,144 @@
+body {
+  background-color: black;
+}
+
+.projects-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  overflow: hidden;
+  padding: 80px 100px;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Layout and styling */
+.projects {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: beige;
+  font-family: "Lato", sans-serif;
+}
+
+.projects-title {
+  font-size: 80px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg,
+      rgba(255, 0, 0, 1),
+      rgba(255, 154, 0, 1),
+      rgba(208, 222, 33, 1),
+      rgba(79, 220, 74, 1),
+      rgba(63, 218, 216, 1),
+      rgba(28, 127, 238, 1),
+      rgba(186, 12, 248, 1),
+      rgba(255, 0, 0, 1));
+  background-size: 1000% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 6s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.projects-subtitle {
+  font-size: 22px;
+  font-weight: 300;
+  color: grey;
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: beige;
+}
+
+.project-card p {
+  font-size: 18px;
+  color: rgb(200, 200, 200);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .projects-container {
+    padding: 60px 40px;
+  }
+
+  .projects-title {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .projects-subtitle {
+    text-align: center;
+  }
+
+  .projects {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects-container {
+    padding: 40px 20px;
+  }
+
+  .projects-title {
+    font-size: clamp(40px, 8vw, 70px);
+  }
+
+  .project-card p {
+    font-size: 16px;
+  }
+}

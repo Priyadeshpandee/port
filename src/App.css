@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    /* cursor: none; */
+}
+
+/* Default/Desktop Layout - Horizontal */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 400vw;
+  left: 0 !important; /* Remove the px */
+  top: 0 !important;
+  position: relative; /* Add this */
+}
+
+.panel {
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-shrink: 0;
+    flex: 0 0 100vw;
+}
+
+/* Mobile Layout - Vertical (Override desktop styles) */
+.container.mobile {
+    display: block !important;
+    width: 100vw !important;
+    height: auto !important;
+    position: static !important;
+    transform: none !important;
+}
+
+.container.mobile .panel {
+    min-width: 100vw !important;
+    min-height: 100vh !important;
+    width: 100vw !important;
+    height: auto !important;
+    flex: none !important;
+    transform: none !important;
+    position: static !important;
+}
+
+/* Ensure mobile gets priority */
+@media (max-width: 768px) {
+    .container {
+        display: block !important;
+        width: 100vw !important;
+        height: auto !important;
+        position: static !important;
+        transform: none !important;
+    }
+    
+    .panel {
+        min-width: 100vw !important;
+        min-height: 100vh !important;
+        width: 100vw !important;
+        height: auto !important;
+        flex: none !important;
+        transform: none !important;
+        position: static !important;
+    }
+}
