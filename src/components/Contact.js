@@ -60,7 +60,7 @@ export default function ContactForm() {
       <div className="contact-container">
         <div className="contact-left">
           <h1>Get in Touch</h1>
-          <p className="subtitle">I'd like to hear from you!</p>
+          <p className="subtitle">I'd like to hear from you!!</p>
           <p className="desc">If you have any inquiries or just want to say hi, please use the contact form!</p>
           <div className="email">
             <FaEnvelope className="icon" />
