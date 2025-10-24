@@ -56,7 +56,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="contact-page" ref={containerRef}>
+    <div id="contact" className="contact-page" ref={containerRef}>
       <div className="contact-container">
         <div className="contact-left">
           <h1>Get in Touch</h1>

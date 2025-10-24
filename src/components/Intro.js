@@ -102,11 +102,11 @@ const Intro = () => {
         </div>
 
         <ul>
-          <li><a href="#about">SKILLS</a></li>
-          <li><a href="#projects">EDUCATION</a></li>
-          <li><a href="#contact">EXPERIENCE</a></li>
-          <li><a href="#home">PROJECTS</a></li>
-          <li><a href="#home">CONATACT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#education">EXPERIENCE</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONATACT</a></li>
         </ul>
       </nav>
 

@@ -61,7 +61,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="skills-section" ref={containerRef}>
+    <div id="skills" className="skills-section" ref={containerRef}>
       <h2 className="skills-heading">Skills</h2>
       <div className="skills-container">
         {skills.map((skill, index) => (

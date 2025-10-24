@@ -37,7 +37,7 @@ export default function Experience() {
   }, []);
 
   return (
-    <div className="experience-container" ref={containerRef}>
+    <div id="education" className="experience-container" ref={containerRef}>
       <div className="content">
         {/* 🎓 Education Section */}
         <div className="section-wrapper">
