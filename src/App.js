@@ -56,7 +56,7 @@ function App() {
         <div className="panel"><Intro /></div>
         <div className="panel"><Skills /></div>
         <div className="panel"><Experience /></div>
-        <div className="panel"><Projects /></div>
+        {/* <div className="panel"><Projects /></div> */}
         <div className="panel"><Contact /></div>
       </div>
     </>

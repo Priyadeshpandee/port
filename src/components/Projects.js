@@ -21,7 +21,7 @@ export default function CenterModeSlider() {
     {
       title: "Aadyatva Ayurveda",
       desc: "Created an e-commerce website for an Ayurvedic cosmetics brand using WordPress & WooCommerce. Integrated features: login, cart, wishlist, dashboard, and payment gateway. Plugins used: WooCommerce, Woosify, Elementor, Contact Form 7, Rank Math.",
-      bg: "https://images.unsplash.com/photo-1588776814546-74d96b8d8b1d?crop=entropy&cs=tinysrgb&fm=jpg&q=85",
+      bg: "",
       link: "#",
     },
   ];
